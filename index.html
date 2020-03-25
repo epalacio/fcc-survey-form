@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header id="title">
-      <h1>freeCodeCamp Survey Form</h1>
+    <header>
+      <h1 id="title">freeCodeCamp Survey Form</h1>
       <p id="description">Thank you for taking the time to help us improve the platform</p>
     </header>
 
@@ -16,6 +16,7 @@
       <div class="form-group">
         <label id="name-label" for="name">
           Name
+          <br>
           <input name="name" id="name" type="text" placeholder="Enter your name" required>
         </label>
       </div>
@@ -23,14 +24,16 @@
       <div class="form-group">
         <label id="email-label" for="email">
           Email
+          <br>
           <input name="email "id="email" type="email" placeholder="Enter your Email" required>
         </label>
       </div>
 
       <div class="form-group">
-        <label id="number-label" for="age">
+        <label id="number-label" for="number">
           Age (optional)
-          <input name="number" id="age" type="number" placeholder="Age" min="13" max="125">
+          <br>
+          <input name="number" id="number" type="number" placeholder="Age" min="13" max="125">
         </label>
       </div>
 
@@ -49,18 +52,18 @@
       <div class="form-group">
         <p>Would you recommmend freeCodeCamp to a friend?</p>
         <label for="definitely">
-          Definitely
           <input type="radio" id="definitely" name="recommendation" value="definitely" checked>
+          Definitely
         </label>
         <br>
         <label for="maybe">
-          Maybe
           <input type="radio" id="maybe" name="recommendation" value="maybe">
+          Maybe
         </label>
         <br>
         <label for="notSure">
-          Not Sure
           <input type="radio" id="notSure" name="recommendation" value="notSure">
+          Not Sure
         </label>
       </div>
 
@@ -71,79 +74,78 @@
           <option value="challenges">Challenges</option>
           <option value="projects">Projects</option>
           <option value="community">Community</option>
-          <option value="open Source">Open Source</option>
+          <option value="openSource">Open Source</option>
         </select>
       </div>
 
       <div class="form-group">
         <p id="dropdown">What is your favourite feature of freeCodeCamp?</p>
         <label for="feature1">
-          Front-end Projects
           <input type="checkbox" id="feature1" name="feature1" value="feprojects">
+          Front-end Projects
         </label>
         <br>
         <label for="feature2">
-          Back-end Projects
           <input type="checkbox" id="feature2" name="feature2" value="beprojects">
+          Back-end Projects
         </label>
         <br>
 
         <label for="feature3">
-          Data Visualization
           <input type="checkbox" id="feature3" name="feature3" value="dataviz">
+          Data Visualization
         </label>
         <br>
         <label for="feature4">
-          Challenges
           <input type="checkbox" id="feature4" name="feature4" value="challenges">
+          Challenges
         </label>
         <br>
         <label for="feature5">
-          Open Source Community
           <input type="checkbox" id="feature5" name="feature5" value="openSourceComm">
+          Open Source Community
         </label>
         <br>
         <label for="feature6">
-          Gitter Help Rooms
           <input type="checkbox" id="feature6" name="feature6" value="gitterHelpRooms">
+          Gitter Help Rooms
         </label>
         <br>
         <label for="feature7">
-          Videos
           <input type="checkbox" id="feature7" name="feature7" value="videos">
+          Videos
         </label>
         <br>
         <label for="feature8">
-          City Meetups
           <input type="checkbox" id="feature8" name="feature8" value="cityMeetups">
+          City Meetups
         </label>
         <br>
         <label for="feature9">
-          Wiki
           <input type="checkbox" id="feature9" name="feature9" value="wiki">
+          Wiki
         </label>
         <br>
         <label for="feature10">
-          Forum
           <input type="checkbox" id="feature10" name="feature10" value="forum">
+          Forum
         </label>
         <br>
         <label for="feature11">
-          Additional Courses
           <input type="checkbox" id="feature11" name="feature11" value="addCourses">
+          Additional Courses
         </label>
         <br>
       </div>
 
       <div class="form-group">
-        <label for="addComents">
-          Any comments or suggestions?
-          <textarea name="addComments" id="addComments" rows="8" cols="80"></textarea>
-        </label>
+        <label for="addComents">Any comments or suggestions?</label>
+        <br>
+        <textarea name="addComments" id="addComments" rows="8" cols="80"></textarea>
         <br>
       </div>
 
-      <button type="submit" name="button">Submit</button>
+      <button id="submit" type="submit" name="button">Submit</button>
     </form>
   </body>
 </html>
