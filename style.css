@@ -1,0 +1,99 @@
+/* Main Styling */
+body {
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(./images/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Baloo Chettan 2', sans-serif;
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: minmax(89vw, 600px);
+  justify-content: center;
+}
+
+/* Header */
+header {
+  align-content: center;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  padding: 20px;
+}
+
+header p {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+/* Form */
+
+form {
+  background-color: #003459;
+  border-radius: 4px;
+  color: #fff;
+  justify-self: center;
+  margin-bottom: 20px;
+  max-width: 680px;
+  opacity: 0.8;
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group p {
+  margin-bottom: 8px;
+}
+
+#name-label,
+#email-label,
+#number-label,
+#textarea-label {
+  line-height: 1.8;
+}
+
+#name,
+#email,
+#number {
+  padding-inline-start: 20px;
+}
+
+#name,
+#email,
+#number,
+#dropdown,
+textarea {
+  border: 0;
+  border-radius: 3px;
+  font-size: 14px;
+  margin: auto;
+  padding: 6px 0;
+  width: 100%;
+}
+
+/* Button */
+button {
+  background-color: #f96700;
+  border-radius: 4px;
+  border: 0;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 20px;
+  transition: all 0.2s;
+  width: 100%;
+}
+button:hover {
+  background-color: #d55800;
+  transform: scale(1.01);
+}
